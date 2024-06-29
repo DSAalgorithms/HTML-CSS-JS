@@ -1,0 +1,244 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+}
+
+/* LOGO and IMAGE */
+#logo {
+    margin: 10px 35px;
+}
+
+#logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 200px;
+    margin: 3px 6px;
+
+}
+
+/* list styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(pexels-vikram-aditya-12091104.jpg) no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7
+}
+
+#home h1 {
+    /* color:white; */
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+#home p {
+    /* color:white; */
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 1300;
+}
+
+/* Services section  */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 15px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    box-shadow: 25px 10px rgb(160, 159, 159);
+    margin-bottom: 20px;
+
+}
+
+#services p {
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+    font-size: small;
+
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+
+/* Client section  */
+
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url("pexels-wallace-chuck-15491784.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients img{
+    height: 124px;
+}
+
+.client-item {
+    padding: 8px;
+}
+
+/* Contact us section  */
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url("pexels-alex-andrews-821754.jpg") no-repeat center center/cover;
+}
+
+#contactbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contactbox input,
+#contactbox textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+}
+
+#contactbox form {
+    width: 40%;
+}
+
+#contactbox label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility classes */
+
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+}
+
+
+.h-secondary {
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: burlywood;
+    margin: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
